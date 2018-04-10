@@ -14,34 +14,9 @@ Got a question? Not sure where it should be made? See [CONTRIBUTING](CONTRIBUTIN
 
 ## How to use
 
-### Composer
-
-```shell
-$ cd /var/www/html # Default Apache WWW directory, feel free to choose your own
-$ composer create-project julianxhokaxhiu/lineage-ota LineageOTA
-```
-
-then finally visit http://localhost/LineageOTA to see the REST Server up and running.
-
-> If you get anything else then a list of files, contained inside the `builds` directory, this means something is wrong in your environment. Double check it, before creating an issue report here.
-
-### Docker
-
-```shell
-$ docker run \
-    --restart=always \
-    -d \
-    -p 80:80 \
-    -v "/home/user/builds:/var/www/html/builds/full" \
-    julianxhokaxhiu/lineageota
-```
-
-then finally visit http://localhost/ to see the REST Server up and running.
-
 ## Where to move built ROM ZIPs
 
 - Full builds should be uploaded into `builds/full` directory.
-- Delta builds should be uploaded into `builds/delta` directory.
 
 ### ONLY for LineageOS 15.x and newer
 
